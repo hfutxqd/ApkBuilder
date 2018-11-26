@@ -14,11 +14,14 @@
 ## 功能说明
 支持AIDL    
 支持Kotlin    
+支持*.jar库   
 支持基于cmake的ndk编译    
 支持zip align优化    
 支持v1和v2签名    
     
 暂不支持多dex    
+暂不支持*.aar   
+暂不支持NDK多架构编译   
 
 ## 其他说明
 测试环境：    
