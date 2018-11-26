@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-CPATH=`pwd`
+CPATH=$(cd "$(dirname "$0")"; pwd)
 export PATH="$CPATH:$PATH"
 
-export PROJ=$1
+export PROJ=$(cd $1; pwd)
 
 if [[ "" == $1 ]]; then
     echo "usage: apk_builder.sh [path]"
@@ -30,6 +30,7 @@ fi
 
 echo "ANDROID_HOME is set to "${ANDROID_HOME}
 echo "ANDROID_NDK_ROOT is set to "${ANDROID_NDK_ROOT}
+echo "Project root is set to "${PROJ}
 
 export BUILD_TOOL_PATH=${ANDROID_HOME}"build-tools/"
 cd $PROJ
