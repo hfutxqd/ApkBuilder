@@ -29,3 +29,4 @@ macOS 10.14.1
 Android SDK build tool 28.0.3    
 Kotlin 1.3.10    
 cmake 3.12.3
+Android NDK r15c
