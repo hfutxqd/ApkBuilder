@@ -5,8 +5,11 @@
 ## 使用步骤
 1. 配置环境变量ANDROID_HOME和ANDROID_NDK_ROOT，分别指向Android SDK的根目录和Android NDK根目录
 2. 安装cmake，把cmake添加到环境变量PATH中
-3. 按照示例编写apk_builder.properties项目配置文件
-4. 使用apk_builder.sh脚本编译项目，执行./apk_builder.sh [path to project root]
+3. 安装python2.7
+4. 使用使用以下命令安装ConfigParser    
+`python2.7 -m pip install ConfigParser`
+5. 按照示例编写apk_builder.properties项目配置文件
+6. 使用apk_builder.sh脚本编译项目，执行./apk_builder.sh [path to project root]
 
 ## 功能说明
 支持AIDL    
