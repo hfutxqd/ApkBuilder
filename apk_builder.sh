@@ -5,6 +5,19 @@ export PATH="$CPATH:$PATH"
 
 export PROJ=$1
 
+if [[ "" == $1 ]]; then
+    echo "usage: apk_builder.sh [path]"
+    echo "note: apk_builder.properties file must exists in the path"
+
+    exit -1
+fi
+
+if [[ ! -e `which cmake` ]]; then
+    echo "cmake must be in PATH"
+    exit -1
+fi
+
+
 if [[ ! -e $ANDROID_HOME ]]; then
     echo "ANDROID_HOME must be set"
     exit -1
